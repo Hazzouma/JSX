@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from 'react';
+import img2 from './600x400-2.png';
+import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <nav className="navbar"><h1 className="title red">Hazem Housseini</h1></nav>
+      <div style={{border: 'solid 1 black', maxWidth:'100vw'}} className="items">
+        <br />
+        <img src={img2} alt="img2" className="imgClass"/>
+        <br />
+        <img src="600x400-1.jpg" alt="IMG1" className="imgClass"/>
+      </div>
+      <video width="320" height="240" controls className="vid">
+        <source src="myVideo.mp4" type="video/mp4" />
+      </video>
+      <footer>
+        <nav className="navbar"><h1 className="title red">Footer</h1></nav>
+      </footer>
+    </Fragment>
   );
 }
 
